@@ -3,22 +3,83 @@
 --color: hsl(71, 73%, 54%);
 --fondo:hsl(204, 43%, 93%);
 --gris: hsl(218, 22%, 67%);
+--blanco: #fff;
+--cyanclaro:rgb(18, 197, 197);
+
 }
 
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before,
+*:after{
+    box-sizing: inherit;
+}
 
 body{
     font-size: 16px;
+    background-color:var(--fondo);
+    font-family: 'Karla', sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
+.caja{
+    background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+    max-height: auto;
+    margin-top: 8rem;
 
-.navbar{
+}
+
+.caja2{
+    background-color: var(--blanco);
+    padding: 1rem;
+}
+
+.caja2 h2{
     color: var(--primary);
 }
 
-.letra{
+.caja2 h3{
     color: var(--color);
 }
 
-.letra2{
+.caja2 p{
     color: var(--gris);
 }
+
+.contenido {
+padding: 1rem;
+color: var(--blanco);
+}
+
+.contenido span{
+  color: var(--cyanclaro);
+}
+
+.contenido2{
+    padding: 1rem;
+    color: var(--blanco);
+    background-color: rgb(18, 197, 197);
+}
+
+.contenido button{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--color);
+    color: var(--blanco);
+    border: none;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+
+
