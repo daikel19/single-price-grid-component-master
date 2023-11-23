@@ -6,6 +6,7 @@
 --blanco: #fff;
 --cyanclaro:rgb(18, 197, 197);
 
+
 }
 
 html{
@@ -29,7 +30,7 @@ body{
 }
 
 .caja{
-    background-color: var(--primary);
+
     display: grid;
     grid-template-columns: 1fr;
     max-width: 30rem;
@@ -43,6 +44,8 @@ body{
 .caja2{
     background-color: var(--blanco);
     padding: 1rem;
+    border-radius: 2rem;
+    
 }
 
 .caja2 h2{
@@ -60,6 +63,7 @@ body{
 @media (min-width:768px){
 
 .caja{
+    
     grid-template-columns: 1fr 1fr;
     max-width: 60rem;
     margin-top: 8rem;
@@ -80,10 +84,11 @@ body{
 .contenido {
 padding: 1rem;
 color: var(--blanco);
+background-color: var(--primary);
 }
 
 .contenido span{
-  color: var(--cyanclaro);
+  color:rgb(190, 184, 184)
 }
 
 .contenido2{
